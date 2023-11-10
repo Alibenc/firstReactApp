@@ -1,0 +1,38 @@
+.delivery {
+  padding: 40px 0;
+}
+.delivery__title {
+  font-size: 26px;
+  text-align: center;
+}
+.delivery > *:not(:first-child) {
+  margin-top: 40px;
+}
+
+.delivery__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery__item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.del-item__icon {
+  width: 80px;
+}
+.del-item__icon-big {
+  width: 65px;
+}
+.delivery__item > *:not(:first-child) {
+  margin-top: 10px;
+}
+.del-item__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.del-item__txt {
+  text-align: center;
+}

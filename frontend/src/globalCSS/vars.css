@@ -1,0 +1,8 @@
+:root {
+  --red: #f00020;
+  --black: #101010;
+  --onePx: 1px;
+  --sixTeenPx: 16px;
+  --gray: #d1d1d1;
+  --grayBorder: var(--onePx) solid var(--gray);
+}

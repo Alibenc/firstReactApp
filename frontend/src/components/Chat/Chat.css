@@ -1,0 +1,109 @@
+@import url(../../globalCSS/vars.css);
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  right: calc((100vw - 1440px) / 2);
+  transition: bottom 0.5s ease 0s;
+  bottom: -400px;
+}
+.chat._active {
+  bottom: 0;
+}
+.chat__perview {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--red);
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+}
+.chat__perview-txt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.chat__perview-icon {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease 0s;
+  width: 20px;
+}
+.chat._active .chat__perview-icon {
+  transform: rotate(0deg);
+}
+
+.chat {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -1px 1px 33px 26px rgba(34, 60, 80, 0.2);
+}
+.chat__body {
+  height: 400px;
+  width: 300px;
+}
+.chat-body__inner {
+  height: 75%;
+}
+.chat-body__massage-wrapper {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.chat-body__inner, .chat-body__massage-wrapper {
+  background-color: #fff;
+  padding: 16px;
+  border-bottom: var(--onePx) solid var(--gray);
+}
+.chat-body__massage {
+  resize: none;
+  width: 90% !important;
+  height: 100% !important;
+  border: var(--onePx) solid var(--gray);
+  outline: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+.chat-body__send {
+  background-color: transparent;
+  cursor: pointer;
+}
+.chat-body__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-body__history {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.chat-body__message-item._user-message {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+  gap: 5px;
+}
+.chat-body__message-item._user-message .chat-body__message-item-txt {
+  background-color: var(--red);
+  color: #fff;
+}
+.chat-body__message-item .chat-body__message-item-txt {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 50%;
+}
+.chat-body__message-del {
+  width: 15px;
+  cursor: pointer;
+}
+.chat-body__massage:invalid + .chat-body__send {
+  pointer-events: none;
+  opacity: 0.8;
+}

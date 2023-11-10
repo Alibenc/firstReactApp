@@ -1,0 +1,42 @@
+@import url(../../globalCSS/vars.css);
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 0;
+}
+.contact__content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact__img {
+  width: 553px;
+  height: 538px;
+}
+.content-item__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+}
+.contact__content-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.content-item__group > *:not(:first-child) {
+  margin-top: 10px;
+}
+.content-item__txt {
+  line-height: 1.3;
+}
+.contact__content-item._phone {
+  align-items: center;
+}

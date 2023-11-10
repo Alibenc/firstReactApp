@@ -1,0 +1,67 @@
+@import url('../../globalCSS/vars.css');
+
+.menu-dishes {
+  padding: 60px 0;
+}
+.menu-dishes > *:not(:first-child) {
+  margin-top: 30px;
+}
+.menu-dishes__card {
+  border: var(--grayBorder);
+  overflow: hidden;
+  border-radius: 20px;
+  width: 23.4%;
+  transition: transform 0.3s ease 0s;
+}
+.menu-dishes__card:hover {
+  transform: translateY(-5px);
+}
+.menu-dishes__body {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.menu-dishes__photo {
+  width: 100%;
+}
+.menu-dishes__content {
+  padding: 25px;
+}
+.menu-dishes__dish-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.menu-dishes__description {
+  font-weight: 300;
+}
+.menu-dishes__content > *:not(:first-child) {
+  margin-top: 15px;
+}
+.menu-dishes__card-price-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-dishes__price {
+  font-weight: 600;
+}
+.menu-dishes__price span {
+  font-size: 22px;
+  font-weight: 800;
+}
+.menu-dishes__add-in-cart {
+  background-color: var(--red);
+  color: #fff;
+  padding: 12px 6px;
+  min-width: 120px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease 0s;
+}
+.menu-dishes__add-in-cart:hover {
+  opacity: 0.8;
+}
+.menu-dishes__title {
+  font-size: 32px;
+}

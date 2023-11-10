@@ -1,0 +1,93 @@
+/***************************************
+*****************шрифты*****************
+****************************************/
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../public/fonts/TTFirsNeue-Bold.woff') format('woff'),
+        url('../public/fonts/TTFirsNeue-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../public/fonts/TTFirsNeue-DemiBold.woff') format('woff'),
+        url('../public/fonts/TTFirsNeue-DemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../public/fonts/TTFirsNeue-Light.woff') format('woff'),
+        url('../public/fonts/TTFirsNeue-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../public/fonts/TTFirsNeue-Medium.woff') format('woff'),
+        url('../public/fonts/TTFirsNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('../public/fonts/TTFirsNeue-Regular.woff') format('woff'),
+        url('../public/fonts/TTFirsNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/***************************************
+**********сброс и заготовки*************
+***************************************/
+@import url(globalCSS/vars.css);
+
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul, ol, li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+html, body {
+	height: 100%;
+	line-height: 1;
+	font-size: var(--sixTeenPx);
+	color: var(--black);
+  font-family: 'TT Firs Neue';
+  font-weight: 400;
+}
+._wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+img {
+	display: block;
+}
+._container {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 20px;
+	box-sizing: content-box;
+  position: relative;
+}
+.main {
+	flex: 1 1 auto;
+  padding: 40px 0;
+}
+body._lock {
+  overflow: hidden;
+  padding-right: 20px;
+}
